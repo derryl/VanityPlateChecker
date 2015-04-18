@@ -1,23 +1,26 @@
-# VanityPlateChecker
-Headless script to check availability of personalized (vanity) plates on CA DMV website.
+#VanityPlateChecker
+Headless script to check availability of personalized (vanity) plates on the CA DMV website.
 
-The DMV website allows you to search for vanity plates, but it's rather cumbersome and difficult to use.
-
-So I wrote this small CLI script to automate that process, making it easier to search for the plate you want.
-
-###Requirements
-
-- CasperJS: `brew update && brew install casperjs`
+![FUUGIIT](fuugiit.jpg)
 
 ###Usage
 
     >> cd VanityPlateChecker
-    >> casperjs find_plate.js --plate={LUVMAN}
+    >> casperjs find_plate.js --plate=LUVMAN
       Seeing if plate is available: LUVMAN
       -- Entering the website --
       -- Submitting your plate --
       Damn. This plate is taken.
 
+###Requirements
+
+- CasperJS: `brew update && brew install casperjs`
+
+
+###Why?
+The DMV website lets you search for personalized plates, but it's rather cumbersome and difficult to use. Especially if you're looking for more than one.
+
+So... I wrote this small CLI script to automate that process. Enjoy!
 
 ###Troubleshooting
 
